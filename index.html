@@ -3,22 +3,31 @@
 <head>
   <meta charset="utf-8">
   <title>SSM Name Picker</title>
-  <link rel="stylesheet" type="text/css" href="SSMnamePicker.css">
-  <script src="SSMnamePicker.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/SSMnamePicker.css">
+  <script src="js/SSMnamePicker.js"></script>
 </head>
-<body>
-<br><br>
-<h2>SSM Name Picker</h2>
-<p>because sometimes you just got to make it random</p>
-  <button class="button" onclick=displayList()>Display names</button>
-  <button class="button" onclick=pickOne()>Pick a name</button>
-<br><br>
 
-<div class='grid-container'>
-  <div class='grid-item grid-init' id="result"></div>
-  <div class='grid-item grid-pick' id="picked"></div>
-  <div class='grid-item grid-picked' id="pickedlist"></div>
+<body id="mainBody" >
+  <header>
+    <br><br>
+
+    <h1>SSM Name Picker</h1>
+    <p>because sometimes you just got to make it random</p>
+      <button class="button" onclick=displayList()>Display names</button>
+      <button class="button" onclick=pickOne()>Pick a name</button>
+      <br><br>
+  </header>
+
+
+    <div class='grid-container'>
+        <div class='grid-item grid-init' id="result"></div>
+        <div class='grid-item grid-pick' id="picked"> </div>
+        <div class='grid-item grid-picked' id="pickedlist"></div>
+    </div>
+<footer>
+  <div>
+  <button class ="button" onclick=cueConfetti()>Confetti</button>
 </div>
+</footer>
 </body>
-
 </html>

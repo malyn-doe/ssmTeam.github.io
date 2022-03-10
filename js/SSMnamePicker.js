@@ -30,7 +30,7 @@ function pickOne() {
       	let winnerIndex = Math.floor(Math.random() * (max - min)) + min;
 
     	currentWinner = namesList[winnerIndex];
- 	
+
       	otpt.innerHTML = currentWinner;
       	pickedNames.push(namesList[winnerIndex]);
       	removeName(winnerIndex);
@@ -60,4 +60,9 @@ function showAllpicked() {
     let otpt = document.getElementById('pickedlist');
     otpt.innerHTML = content;
 
+}
+
+function cueConfetti(){
+  var element = document.getElementById("mainBody");
+  element.classList.toggle("confetti26");
 }
