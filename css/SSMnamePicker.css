@@ -11,6 +11,9 @@ body{
 .confetti26 {
     background-image: url('confetti-26.gif');
 }
+.friyay{
+  visibility: hidden;
+}
 header{
   background-color: rgba(255, 255, 255, 0.8);
   max-width: 800px;

@@ -5,7 +5,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////
 
 
-let namesList = ["Alanna","Ameer","Amira","Brydan","Chay","Christoffer","Emily", "Frankie","Jason", "Jen","Leila","Malyn","Maria", "Olena","Paul B", "Paul K","Ricardo", "Toni"];
+let namesList = ["Alanna","Ameer","Amira","Brydan","Chay","Christoffer","Emily", "Frankie","Jason", "Leila","Malyn","Maria", "Olena","Paul B", "Paul K","Ricardo", "Toni"];
 let currentWinner;
 let pickedNames = [];
 
@@ -65,4 +65,7 @@ function showAllpicked() {
 function cueConfetti(){
   var element = document.getElementById("mainBody");
   element.classList.toggle("confetti26");
+  var mygif = document.getElementById("friyay");
+
+  mygif.classList.toggle("friyay");
 }
