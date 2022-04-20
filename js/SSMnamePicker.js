@@ -31,7 +31,7 @@ function pickOne() {
 
     	  currentWinner = namesList[winnerIndex];
         if (currentWinner == "Luchia"){
-          otpt.innerHTML = currentWinner + ", Welcome to the team!"
+          otpt.innerHTML = currentWinner + ", Welcome!"
         }
         else {
           otpt.innerHTML = currentWinner;
