@@ -5,7 +5,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////
 
 
-let namesList = ["Alanna","Ameer","Amira","Brydan","Chay","Christoffer","Emily", "Frankie","Jason", "Leila","Malyn","Maria", "Olena","Paul B", "Paul K","Ricardo", "Toni"];
+let namesList = ["Alanna","Ameer","Amira","Brydan","Chay","Christoffer","Emily", "Frankie","Jason", "Leila","Luchia","Malyn","Maria", "Olena","Paul B", "Paul K","Ricardo", "Toni"];
 let currentWinner;
 let pickedNames = [];
 
@@ -29,17 +29,21 @@ function pickOne() {
       if (max > 0){
       	let winnerIndex = Math.floor(Math.random() * (max - min)) + min;
 
-    	currentWinner = namesList[winnerIndex];
-
-      	otpt.innerHTML = currentWinner;
+    	  currentWinner = namesList[winnerIndex];
+        if (currentWinner == "Luchia"){
+          otpt.innerHTML = currentWinner + ", Welcome to the team!"
+        }
+        else {
+          otpt.innerHTML = currentWinner;
+        }
       	pickedNames.push(namesList[winnerIndex]);
       	removeName(winnerIndex);
       	showAllpicked();
       	displayList();
-	}
-	else {
-		otpt.innerHTML = "All done!";
-	}
+  	}
+  	else {
+  		otpt.innerHTML = "All done!";
+  	}
 }
 
 
