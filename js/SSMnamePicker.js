@@ -5,7 +5,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////
 
 
-let namesList = ["Alanna","Ameer","Amira","Brydan","Chay","Christoffer","Emily", "Frankie","Jason", "Leila","Luchia","Malyn","Maria", "Olena","Paul B", "Paul K","Ricardo", "Toni"];
+let namesList = ["Alanna","Ameer","Amira","Brydan","Chay","Christoffer","Emily", "Frankie","Jason","Kristy","Leila","Luchia","Malyn","Maria", "Olena","Paul B", "Paul K","Ricardo", "Toni"];
 let currentWinner;
 let pickedNames = [];
 
@@ -30,8 +30,10 @@ function pickOne() {
       	let winnerIndex = Math.floor(Math.random() * (max - min)) + min;
 
     	  currentWinner = namesList[winnerIndex];
-        if (currentWinner == "Luchia"){
+        if (currentWinner == "Kristy"){
           otpt.innerHTML = currentWinner + ", Welcome to the team!"
+          cueConfetti();
+          setTimeout(cueConfetti, 10000) ;
         }
         else {
           otpt.innerHTML = currentWinner;
@@ -52,7 +54,7 @@ function removeName(winnerIndex) {
 }
 
 function showAllpicked() {
-    let content = "<h2>Thou hast spoken</h2>";
+    let content = "<h2>Gr8 to hear from you</h2>";
     content += "<ul>";
     for (let i = 0; i < pickedNames.length; i++) {
       content += "<li>";
