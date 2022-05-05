@@ -5,7 +5,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////
 
 
-let namesList = ["Alanna","Ameer","Amira","Brydan","Chay","Christoffer","Emily", "Frankie","Jason","Kristy","Leila","Luchia","Malyn","Maria", "Olena","Paul B", "Paul K","Ricardo", "Toni"];
+let namesList = ["Alanna","Ameer","Amira","Brydan","Chay","Christoffer","Emily", "Frankie","Jason","Kersti","Kristy","Leila","Luchia","Malyn","Maria", "Olena","Paul B", "Paul K","Ricardo", "Toni"];
 let currentWinner;
 let pickedNames = [];
 
@@ -30,7 +30,7 @@ function pickOne() {
       	let winnerIndex = Math.floor(Math.random() * (max - min)) + min;
 
     	  currentWinner = namesList[winnerIndex];
-        if (currentWinner == "Kristy"){
+        if (currentWinner == 'Kersti' || currentWinner =='Kristy'){
           otpt.innerHTML = currentWinner + ", Welcome to the team!"
           cueConfetti();
           setTimeout(cueConfetti, 10000) ;
